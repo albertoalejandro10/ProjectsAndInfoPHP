@@ -1,0 +1,33 @@
+# -- Composer -----------------------------------------
+composer.phar
+vendor/*
+ 
+# -- PHPUnit ------------------------------------------
+app/phpunit.xml  
+ 
+# -- Editores -----------------------------------------
+# vim
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+ 
+# phpstorm
+.idea/
+ 
+# textmate
+*.tmproj
+*.tmproject
+tmtags
+ 
+# sublimetext
+/*.sublime-project
+*.sublime-workspace
+ 
+
+ 
+# Linux
+.*
+!.gitignore
+!.htaccess
+*~
