@@ -1,6 +1,6 @@
 <?php
 
-class User
+class User //Si una clase tiene el atributo final es que es una clase que no se puede heredar sus propiedades; igual sucede si algun metodo tiene ese atributo.
 {
     public $name;
 

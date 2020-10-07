@@ -1,28 +1,24 @@
 <?php
+//contratos
+//Database, get, delete, store, edit, update.
 
-interface Search
+interface Person
 {
-    public function all();
+    public function getName();
 }
 
-class User implements Search
+class Admin implements Person
 {
-    public function all()
+    public $name;
+    public function __construct($name)
     {
-        return "Obteniendo a los Users, XML";
+        $this->name = $name;
+    }
+    public function getName()
+    {
+        return $this->name;
     }
 }
 
-class Post implements Search
-{
-    public function all()
-    {
-        return "Obteniendo a los Posts, JSON";
-    }
-}
-
-$user = new User();
-echo $user->all();
-
-$post = new Post();
-echo $post->all();
+$admin = new Admin('Betox');
+echo $admin->getName();
